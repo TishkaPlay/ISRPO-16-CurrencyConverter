@@ -92,8 +92,6 @@ namespace CurrencyConverter
                 MessageBox.Show("Неверный формат числа","Ошибка",MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
-
-
             decimal fromValue = decimal.Parse(cmbFromCurrency.SelectedValue.ToString());
             decimal toValue = decimal.Parse(cmbToCurrency.SelectedValue.ToString());
             decimal result = (amount * fromValue) / toValue;
